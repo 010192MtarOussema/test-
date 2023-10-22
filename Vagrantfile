@@ -71,12 +71,9 @@ Vagrant.configure("2") do |config|
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
    config.vm.provision "shell", inline: <<-SHELL
-   chmod 755 /vagrant/vm/provision.sh
-   /vagrant/vm/provision.sh
+   
    echo 'Before installing ' 
-   sudo yum -y update
-   sudo yum -y install java-1.8.0-openjdk-devel 
-   sudo yum -y install maven
+
    echo 'After installing ' 
    SHELL
 end
