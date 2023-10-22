@@ -13,7 +13,6 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "centos/7"
-  config.vm.synced_folder "C:/Formation_devops/TP/spring-boot-test-vm/demo/demo", "/vagrant", type: "rsync", rsync__rsync_path: "C:/Program Files/Vagrant/embedded/usr/bin/rsync.exe"
 
 
   # Disable automatic box update checking. If you disable this, then
